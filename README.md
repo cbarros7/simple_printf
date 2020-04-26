@@ -1,4 +1,4 @@
-# Simple Shell - Holberton School :robot:
+# Simple Shell - Holberton School :octocat:
 
 ## Synopsis :thought_balloon:
 It is a simple prototype of the original printf function used in the C.
@@ -59,38 +59,25 @@ The **Mr. Robot** supports most shell commands, such as ```cat```, ```pwd```, ``
 |[print_porcent](https://github.com/cbarros7/printf/blob/master/function.c) | Print simbol %%. |
 |[_write_char](https://github.com/cbarros7/printf/blob/master/_write.c) | Writes the character c to stdout. |
 
-## Syntax :notebook_with_decorative_cover:
-**Mr. Robot** the user can have the experience in an interactive and non-interactive way. On the one hand, if it is invoked with a standard input that is not connected to the terminal, *Mr. Robot* reads and executes the received commands in order.
-
-To use the **Mr. Robot** interactive mode use isatty(3). Immediately the user will see a warning $ indicating that our shell is ready to read the command.
-
-On the other hand, in non-interactive mode the user will enter command line arguments, so **Mr. Robot** treats the first argument as a file from which to read the commands.
-In interactive mode, you can type commands from the keyboard:
-
-Example:
-```
-$ ./hsh
-$ /bin/ls
-```
-In non-interactive mode, you can pipe commands into the program using echo or cat:
-
-Non-interactive:
-
-Example:
-```
-$ echo "/bin/ls" | ./hsh
-$ cat file_name | ./hsh
-```
-
-You can use the same syntax for running commands in other shells:
-```
-<command> <flags or options> <argument 1> <argument 2> ...
-```
-
-In non-interactive mode:
-```
-<command> | ./hsh
-```
+## Examples program :notebook_with_decorative_cover:
+| Use cases|
+|----------------|
+|[_printf("%c", 'S');]
+|[_printf("A char inside a sentence: %c. Did it work?\n", 'F');]
+|[_printf("Let'see if the cast is correctly done: %c. Did it work?\n", 48);]
+|[_printf("%s", "This sentence is retrieved from va_args!\n");]
+|[_printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");]
+|[_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);]
+|[_printf("%c%cth %s%s a%cg%s: Y%sou %s no%ching%s Snow.%c", 'W', 'i', "some ", "more", 'r', "s", "", "know", 't', ", Jon", '\n');]
+|[_printf("%%");]
+|[_printf("Should print a single percent sign: %%\n");]
+|[_printf("%s%c%c%c%s%%%s%c", "Loading ", '.', '.', '.', " 99", " Please wait", '\n');]
+|[_printf("css%ccs%scscscs\n", 'T', "Test");]
+|[_printf(NULL);]
+|[_printf("%c", '\0');]
+|[_printf("%");]
+|[_printf("%!\n");]
+|[_printf("%K\n");]
 
 
 ## Return :clap:
@@ -100,14 +87,12 @@ The function will always return an integer, corresponding to the symbol, without
 ## Bugs :loudspeaker:
 No known bugs.
 
-## Annotations :loudspeaker:
-We have written an [**article**](https://www.linkedin.com/pulse/ls-l-command-understanding-what-happens-shell-carlos-barros/) in which we deepen the internal processes within the shell by typing the command "ls -l". We talk about fundamental elements such as the PATH, and conclude with the permission structure with some examples. 
-
 ## Authors :black_nib:
-* **Carlos Barros** [Github](https://github.com/cbarros7) [LinkedIn](https://www.linkedin.com/in/carlosbarros7/]
+* **Carlos Barros** [Github](https://github.com/cbarros7) 
+                    [LinkedIn](https://www.linkedin.com/in/carlosbarros7/]
 
 ## Acknowledgements :pray:
-Thanks to all the software engineers, peers from different cohorts of the Holberton School, for all the learning that we have been able to acquire in this academic period culminating in this shell emulation. 
+Thanks to all the software engineers, colleagues from different cohorts of the Holberton School, for all the learning we have been able to acquire in this project, it has undoubtedly allowed us to expand our knowledge in the C programming language. 
 
 For more information about Holberton, visit this [link](https://www.holbertonschool.com/).
 
