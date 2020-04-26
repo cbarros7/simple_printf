@@ -1,4 +1,4 @@
-# Simple Shell - Holberton School :octocat:
+# Simple Printf - Holberton School :octocat:
 
 ## Synopsis :thought_balloon:
 It is a simple prototype of the original printf function used in the C.
@@ -37,7 +37,7 @@ git clone https://github.com/cbarros7/simple_printf.git
 ## Usage :computer:
 All the files are to be compiled on an Ubuntu 14.04 LTS machine with:
 ```
-gcc -Wall -Werror -Wextra -pedantic *.c printf
+gcc -Wall -Werror -Wextra -pedantic *.c -o printf
 ```
 
 Once compiled, to start the program, run:
